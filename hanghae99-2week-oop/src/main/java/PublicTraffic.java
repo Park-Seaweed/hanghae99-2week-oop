@@ -1,27 +1,29 @@
  public class PublicTraffic {
     int num;
-    boolean status;
-    int x;
+    int speed;
+    String status = "운행";
     int peopleMax;
     int currentPassenger;
-    int fuelVolume;
-    int speed;
+    int fuelVolume = 100;
+    int currentOilCondition;
+    int distance;
 
-    public PublicTraffic(int num, boolean status, int peopleMax, int currentPassenger, int fuelVolume, int speed) {
+
+    public PublicTraffic(int num,int speed, int peopleMax, int currentPassenger,
+                          int currentOilCondition,int distance) {
         this.num = num;
-        this.status = status;
+        this.speed = speed;
         this.peopleMax = peopleMax;
         this.currentPassenger = currentPassenger;
-        this.fuelVolume = fuelVolume;
-        this.speed = speed;
+        this.currentOilCondition = currentOilCondition;
+        this.distance = distance;
+
     }
 
-    public PublicTraffic(int num, boolean status, int peopleMax, int currentPassenger, int speed) {
-        this(num, status, peopleMax, currentPassenger,100, 0);
+    public PublicTraffic(int num, int speed , int peopleMax) {
+        this(num, speed, peopleMax, 0,10,0);
     }
-    public int number(){
-        return currentPassenger;
-    }
-    
+
+
 
  }
