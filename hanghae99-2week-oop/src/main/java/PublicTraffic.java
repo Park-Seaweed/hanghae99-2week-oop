@@ -1,4 +1,4 @@
- public class PublicTraffic {
+ public abstract class PublicTraffic {
     int num;
     int speed;
     String status = "운행";
@@ -7,6 +7,7 @@
     int fuelVolume = 100;
     int currentOilCondition;
     int distance;
+    String place;
 
 
     public PublicTraffic(int num,int speed, int peopleMax, int currentPassenger,
@@ -21,9 +22,7 @@
     }
 
     public PublicTraffic(int num, int speed , int peopleMax) {
-        this(num, speed, peopleMax, 0,10,0);
+        this(num, speed, peopleMax, 0,0,0);
     }
-
-
 
  }

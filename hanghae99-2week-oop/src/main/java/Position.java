@@ -1,4 +1,4 @@
 public interface Position {
-    void placeCheck(int place);
-    void distanceCheck(int distance);
+    void placeCheck(String place,int distance);
+
 }

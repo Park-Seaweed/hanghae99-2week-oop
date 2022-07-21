@@ -6,7 +6,7 @@ public class Main {
         PublicTraffic[] publicTraffics = {bus,taxi};
         for (PublicTraffic publicTraffic:publicTraffics){
             if (publicTraffic instanceof Fee){
-                ((Fee)publicTraffic).rateCheck(1);
+                ((Fee)publicTraffic).rateCheck(2);
                 System.out.println("-------------");
             }
         }
@@ -24,7 +24,7 @@ public class Main {
         }
         for (PublicTraffic publicTraffic:publicTraffics){
             if (publicTraffic instanceof Position) {
-                ((Position) publicTraffic).distanceCheck(3);
+                ((Position) publicTraffic).placeCheck("동탄",100);
                 System.out.println("-------------");
             }
         }

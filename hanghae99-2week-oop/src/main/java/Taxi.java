@@ -35,17 +35,18 @@ public class Taxi extends PublicTraffic implements Fee,Position {
         }
     }
 
-    @Override
-    public void placeCheck(int place) {
 
-    }
 
     @Override
-    public void distanceCheck(int distance) {
+    public void placeCheck(String place,int distance) {
         this.distance = distance;
+        this.place = place;
         System.out.println("목적지까지의 거리=" + distance + "km");
         System.out.println("기본 요금 확인=" +basic);
+        System.out.println("목적지까지 거리=" +place);
         System.out.println("지불할 요금=" + (basic+(distance-1)*1000));
     }
+
+
 }
 
