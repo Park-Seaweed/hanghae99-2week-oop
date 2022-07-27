@@ -8,7 +8,6 @@
      public void rateCheck(int currentPassenger) {
          this.currentPassenger = currentPassenger;
          if (currentPassenger < peopleMax){
-             printWhoAmI();
              System.out.println("****버스****");
              System.out.println("탑승 승객 수=" + currentPassenger);
              System.out.println("잔여 승객 수=" + (peopleMax - currentPassenger));
@@ -24,7 +23,6 @@
      public void oilCheck(int currentOilCondition, String status) {
          this.currentOilCondition = currentOilCondition;
          this.status = status;
-         printWhoAmI();
          if (status.equals("차고지행")){
              System.out.println("상태=" + status);
              System.out.println("주유량=" + currentOilCondition);
